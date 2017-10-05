@@ -4,6 +4,8 @@
     <color name="colorPrimaryDark">@color/dark_pink</color>
     <color name="colorAccent">#FF4081</color>
 
+    <color name="icon">@color/white</color>
+
     <color name="pink">#FF0077</color>
     <color name="light_pink">#fce4ec</color>
     <color name="dark_pink">#bf5f82</color>

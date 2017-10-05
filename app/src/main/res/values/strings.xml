@@ -10,4 +10,9 @@
     <string name="email">Email</string>
     <string name="telephone">Celular</string>
     <string name="adress">Endereço</string>
+
+    <string name="contacts">Contatos</string>
+    <string name="novo_contato">Novo Contato</string>
+
+    <string name="places_api"></string>
 </resources>

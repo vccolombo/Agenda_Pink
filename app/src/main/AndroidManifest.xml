@@ -13,11 +13,11 @@
 
         <meta-data
             android:name="com.google.android.maps.v2.API_KEY"
-            android:value="" />
+            android:value="@string/places_api" />
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyCj1vKW3DEUuYnNmUF5z-dAsPdl7dM2eLw" />
+            android:value="@string/places_api" />
 
 
 
@@ -30,9 +30,12 @@
         </activity>
         <activity
             android:name=".ContactActivity"
-            android:theme="@style/AppTheme" />
+            android:theme="@style/AppTheme"
+
+            android:exported="true" />
         <activity
             android:name=".CadastroContato"
+            android:theme="@style/AppTheme"
             android:exported="true" />
     </application>
 

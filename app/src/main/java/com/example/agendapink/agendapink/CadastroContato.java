@@ -4,8 +4,10 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.net.Uri;
 import android.provider.MediaStore;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -20,7 +22,7 @@ import com.google.android.gms.location.places.ui.PlacePicker;
 public class CadastroContato extends AppCompatActivity {
 
     static final int REQUEST_IMAGE_CAPTURE = 1;
-    static  final int PLACE_PICKER_REQUEST = 2;
+    static final int PLACE_PICKER_REQUEST = 2;
 
 
     ImageView mImageView;
@@ -31,6 +33,9 @@ public class CadastroContato extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cadastro_contato);
+
+        setTitle(R.string.novo_contato);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         mImageView = (ImageView) findViewById(R.id.sign_up_image);
         openMapButton = (Button) findViewById(R.id.sign_up_map_button);
@@ -46,9 +51,7 @@ public class CadastroContato extends AppCompatActivity {
                 PlacePicker.IntentBuilder builder = new PlacePicker.IntentBuilder();
                 try {
                     startActivityForResult(builder.build(CadastroContato.this), PLACE_PICKER_REQUEST);
-                } catch (GooglePlayServicesRepairableException e) {
-                    e.printStackTrace();
-                } catch (GooglePlayServicesNotAvailableException e) {
+                } catch (GooglePlayServicesRepairableException | GooglePlayServicesNotAvailableException e) {
                     e.printStackTrace();
                 }
 
@@ -80,6 +83,18 @@ public class CadastroContato extends AppCompatActivity {
                 //Toast.makeText(this, toastMsg, Toast.LENGTH_LONG).show();
                 addressEditText.setText(msg);
             }
+        }
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                finish();
+                return true;
+
+            default:
+                return false;
         }
     }
 
