@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Agenda Pink</string>
+    <string name="main_activity_button">Conectar-se</string>
+    <string name="username">Usuário</string>
+    <string name="password">Senha</string>
+
+    <string name="invalid_username">Usuário inválido</string>
+    <string name="invalid_password">Senha inválida</string>
+    <string name="name">Nome</string>
+    <string name="email">Email</string>
+    <string name="telephone">Celular</string>
+    <string name="adress">Endereço</string>
+</resources>
