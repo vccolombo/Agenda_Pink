@@ -3,4 +3,4 @@ Uma agenda para Android em que você pode salvar seus contatos. Seu principal di
 
 Feito como trabalho da disciplina de Desenvolvimento Mobile da UFSCar, em 2017.
 
-Por [Víctor Colombo](https://github.com/vccolombo) e [Mariana Zagatti](https://github.com/marizagat)
+Feito por [Víctor Colombo](https://github.com/vccolombo), [Mariana Zagatti](https://github.com/marizagat) e Natasha Sofia Graifman
